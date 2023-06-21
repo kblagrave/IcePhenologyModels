@@ -1,5 +1,5 @@
 # IcePhenologyModels
-This repository includes code associated with "Projecting climate change impacts
+This repository contains code associated with "Projecting climate change impacts
 on ice phenology across midwestern and northeastern United States lakes".
 
 - **Notebooks**: directory contains two Jupyter notebooks connected to building and aggregating daily meteorological time series
