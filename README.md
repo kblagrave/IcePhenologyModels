@@ -6,3 +6,8 @@ on ice phenology across midwestern and northeastern United States lakes".
 - **scripts**: contains a Python script that calculates ice phenology based on a random forest model trained on lakes across the midwestern and northeastern United States 
 - **Models**: Random forest ice phenology models (ice-on and ice-off).
 - **Data**: List of weather stations used to build each lake's continuous daily meteorological record.
+
+
+[![DOI](https://zenodo.org/badge/631721853.svg)](https://zenodo.org/badge/latestdoi/631721853)
+
+
