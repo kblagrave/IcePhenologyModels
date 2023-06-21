@@ -4,11 +4,19 @@ from geopy import distance
 import os
 from pathlib import Path
 
-from kpmb_lib import download
+import requests
 
 volume = 'My Passport for Mac'
 
 OUTPUTDIR = Path(f'/Volumes/{volume}/WeatherData/NOAA/csv/')
+
+
+def download(url, outfile, chunk_size=128, header=None, verify=True):
+    r = requests.get(url, stream=True,verify=verify)
+    with open(outfile, 'wb') as f:
+        for chunk in r.iter_content(chunk_size=chunk_size):
+            f.write(chunk)
+
 
 def get_date(datestring,df,after=None, before=None, variable = 'ave_air_temp_adjusted', label=None, datecolumn=None):
     """
